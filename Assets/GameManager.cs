@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        ground = GameObject.FindWithTag("ground");
+        ground = GameObject.FindWithTag("Ground");
         player = GameObject.FindWithTag("Player");
         movingGround = ground.GetComponent<MovingGround>();
 	}
