@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
 	public int StartingCount = 8;
 	public float Speed = 50f;
 
-
+    public Transform[] Anchor;
 
 
 	private List<GameObject> _levelModules = new List<GameObject>();
@@ -96,7 +96,7 @@ public class LevelManager : MonoBehaviour
 		var lastLevel = last.GetComponent<Level>();
 		if (last.transform.position.z + lastLevel.GetSize().z > FarPlane)
 		{
-			Debug.Log("FirstZ: " + last.transform.position.z + lastLevel.GetSize().z);
+			//Debug.Log("FirstZ: " + last.transform.position.z + lastLevel.GetSize().z);
 			
 			_levelModules.RemoveAt(_levelModules.Count - 1);
 			GameObject.DestroyImmediate(last.gameObject);
