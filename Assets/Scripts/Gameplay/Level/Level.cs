@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-class Level : MonoBehaviour
+public class Level : MonoBehaviour
 {
 	public GameObject Graphics = null;
 
