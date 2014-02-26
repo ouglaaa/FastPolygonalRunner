@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
 		{
 			Move(_current.Next);
 		}
+		transform.rotation = Quaternion.AngleAxis(Time.time * Mathf.PI * 200,  Vector3.left);
 	}
 
 	private void Move(LinkedListNode<Vector3> node)
