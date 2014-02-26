@@ -9,8 +9,6 @@ class Level : MonoBehaviour
 	public GameObject Graphics = null;
 
 	public Vector3 _size = Vector3.zero;
-	private float _speed;
-	private float _farPlane;
 
 	public void Awake()
 	{
@@ -19,9 +17,7 @@ class Level : MonoBehaviour
 
 	public void Start()
 	{
-		var lm = LevelManager.Get;
-		_speed = lm.Speed;
-		_farPlane = lm.FarPlane;
+
 	}
 
 	public Vector3 GetSize()

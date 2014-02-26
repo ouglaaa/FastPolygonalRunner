@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
 	public int StartingCount = 8;
 	public float Speed = 50f;
 
-    public Transform[] Anchor;
+    public Transform[] Anchors;
 
 
 	private List<GameObject> _levelModules = new List<GameObject>();
@@ -88,7 +88,6 @@ public class LevelManager : MonoBehaviour
 		var firstLevel = first.GetComponent<Level>();
 		if (first.transform.position.z + firstLevel.GetSize().z > -20f)
 		{
-			Debug.Log("FirstZ: " + first.transform.position.z + firstLevel.GetSize().z);
 			PushNewElement();
 		}
 
@@ -96,8 +95,6 @@ public class LevelManager : MonoBehaviour
 		var lastLevel = last.GetComponent<Level>();
 		if (last.transform.position.z + lastLevel.GetSize().z > FarPlane)
 		{
-			//Debug.Log("FirstZ: " + last.transform.position.z + lastLevel.GetSize().z);
-			
 			_levelModules.RemoveAt(_levelModules.Count - 1);
 			GameObject.DestroyImmediate(last.gameObject);
 		}
@@ -108,7 +105,6 @@ public class LevelManager : MonoBehaviour
 		int random = UnityEngine.Random.Range(0, Modules.Length - 1);
 		var first = _levelModules.FirstOrDefault();
 		var piece = Modules[random];
-		Vector3 newPos = Vector3.zero;
 		var go = GameObject.Instantiate(piece, Vector3.zero, this.transform.rotation) as GameObject;
 		go.transform.parent = _level.transform;
 		if (first != null)
@@ -118,8 +114,6 @@ public class LevelManager : MonoBehaviour
 			var newSizeZ = go.GetComponent<Level>().GetSize().z;
 			var sizeZ = (firstSize + newSizeZ) / 2.0f;
 			var newPosZ = firstPosZ - sizeZ;
-
-
 
 			go.transform.position = new Vector3(0, 0, newPosZ);
 
@@ -131,10 +125,5 @@ public class LevelManager : MonoBehaviour
 			_levelModules.Add(go);
 		}
 		
-	}
-
-	public void UnRegister(GameObject gameObject)
-	{
-		_levelModules.Remove(gameObject);
 	}
 }
