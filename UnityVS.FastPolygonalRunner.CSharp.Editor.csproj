@@ -52,6 +52,12 @@
     <Reference Include="Glow11">
       <HintPath>Assets\ExternalPlugins\Glow11\_internal\Plugins\Glow11.dll</HintPath>
     </Reference>
+    <Reference Include="HOTweenV1_Editor">
+      <HintPath>Assets\ExternalPlugins\HOTween\Plugins\Editor\HOTweenV1_Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="HOTween">
+      <HintPath>Assets\ExternalPlugins\HOTween\Plugins\HOTween.dll</HintPath>
+    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Assets\ExternalPlugins\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
@@ -69,6 +75,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ExternalPlugins\iTweenEditor\Editor\iTweenEventDataEditor.cs" />
+    <Compile Include="Assets\ExternalPlugins\iTweenEditor\Editor\iTweenPathEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\LevelManagerEditor.cs" />
     <None Include="Assets\ExternalPlugins\Glow11\_internal\AdvancedBlur.cginc" />
     <None Include="Assets\ExternalPlugins\Glow11\_internal\Glow11GlowObjectsCG.cginc" />
@@ -138,6 +146,8 @@
     <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Unlit-Color.shader" />
     <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Unlit-Normal.shader" />
     <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unlit-VertexColor.shader" />
+    <None Include="Assets\ExternalPlugins\HOTween\Plugins\HOTween.XML" />
+    <None Include="Assets\ExternalPlugins\HOTween\readme.txt" />
     <None Include="Assets\ExternalPlugins\IndieGlow\PreviewScene\SceneShader\BumpedSpecular_UnlitLayer.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowCamera_Base.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowCameraDisplayGlow_Base.shader" />
@@ -148,7 +158,9 @@
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Fluid_Ranged.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Particle_Ranged.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Pulse_Ranged.shader" />
+    <None Include="Assets\ExternalPlugins\iTweenEditor\README.txt" />
     <None Include="Assets\ExternalPlugins\Glow11\_internal\Editor\Glow11_Editor.dll" />
+    <None Include="Assets\ExternalPlugins\HOTween\Plugins\Editor\HOTweenV1_Editor.dll" />
     <None Include="Assets\ExternalPlugins\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />
     <None Include="Assets\ExternalPlugins\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll" />
     <None Include="Assets\ExternalPlugins\UnityVS\Editor\UnityVS.VersionSpecific.dll" />

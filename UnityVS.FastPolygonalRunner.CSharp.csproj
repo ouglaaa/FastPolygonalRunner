@@ -49,11 +49,15 @@
     <Reference Include="Glow11">
       <HintPath>Assets\ExternalPlugins\Glow11\_internal\Plugins\Glow11.dll</HintPath>
     </Reference>
+    <Reference Include="HOTween">
+      <HintPath>Assets\ExternalPlugins\HOTween\Plugins\HOTween.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ExternalPlugins\Glow11\Glow11DemoScene\Scripts\ColorChanger.cs" />
     <Compile Include="Assets\ExternalPlugins\Glow11\Glow11DemoScene\Scripts\ColorChangerVertex.cs" />
     <Compile Include="Assets\ExternalPlugins\Glow11\Glow11DemoScene\Scripts\Set60Fps.cs" />
+    <Compile Include="Assets\ExternalPlugins\HOTween\_Demo\HOTweenDemoBrain.cs" />
     <Compile Include="Assets\ExternalPlugins\IndieGlow\PreviewScene\Scripts\AnimatedUVs.cs" />
     <Compile Include="Assets\ExternalPlugins\IndieGlow\PreviewScene\Scripts\FlashLight.cs" />
     <Compile Include="Assets\ExternalPlugins\IndieGlow\PreviewScene\Scripts\FPSWalker.cs" />
@@ -67,6 +71,13 @@
     <Compile Include="Assets\ExternalPlugins\IndieGlow\PreviewScene\Scripts\TransformInfluence.cs" />
     <Compile Include="Assets\ExternalPlugins\IndieGlow\Scripts\GlowCamera\GlowCamera.cs" />
     <Compile Include="Assets\ExternalPlugins\IndieGlow\Scripts\GlowObject\GlowObject.cs" />
+    <Compile Include="Assets\ExternalPlugins\iTweenEditor\Examples\StartAndStopTween.cs" />
+    <Compile Include="Assets\ExternalPlugins\iTweenEditor\Helper Classes\EventParamMappings.cs" />
+    <Compile Include="Assets\ExternalPlugins\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />
+    <Compile Include="Assets\ExternalPlugins\iTweenEditor\Helper Classes\Vector3OrTransformArray.cs" />
+    <Compile Include="Assets\ExternalPlugins\iTweenEditor\iTween.cs" />
+    <Compile Include="Assets\ExternalPlugins\iTweenEditor\iTweenEvent.cs" />
+    <Compile Include="Assets\ExternalPlugins\iTweenEditor\iTweenPath.cs" />
     <Compile Include="Assets\Scripts\Framework\Coroutines\Coroutine2.cs" />
     <Compile Include="Assets\Scripts\Framework\Coroutines\CoroutineManager.cs" />
     <Compile Include="Assets\Scripts\Framework\Extensions\LinkedListExt.cs" />
@@ -144,6 +155,8 @@
     <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Unlit-Color.shader" />
     <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Unlit-Normal.shader" />
     <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unlit-VertexColor.shader" />
+    <None Include="Assets\ExternalPlugins\HOTween\Plugins\HOTween.XML" />
+    <None Include="Assets\ExternalPlugins\HOTween\readme.txt" />
     <None Include="Assets\ExternalPlugins\IndieGlow\PreviewScene\SceneShader\BumpedSpecular_UnlitLayer.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowCamera_Base.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowCameraDisplayGlow_Base.shader" />
@@ -154,7 +167,9 @@
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Fluid_Ranged.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Particle_Ranged.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Pulse_Ranged.shader" />
+    <None Include="Assets\ExternalPlugins\iTweenEditor\README.txt" />
     <None Include="Assets\ExternalPlugins\Glow11\_internal\Plugins\Glow11.dll" />
+    <None Include="Assets\ExternalPlugins\HOTween\Plugins\HOTween.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
