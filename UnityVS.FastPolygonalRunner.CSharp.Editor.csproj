@@ -159,6 +159,7 @@
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Particle_Ranged.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Pulse_Ranged.shader" />
     <None Include="Assets\ExternalPlugins\iTweenEditor\README.txt" />
+    <None Include="Assets\Standard Assets\Materials\UnlitColor.shader" />
     <None Include="Assets\ExternalPlugins\Glow11\_internal\Editor\Glow11_Editor.dll" />
     <None Include="Assets\ExternalPlugins\HOTween\Plugins\Editor\HOTweenV1_Editor.dll" />
     <None Include="Assets\ExternalPlugins\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />

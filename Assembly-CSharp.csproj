@@ -72,8 +72,13 @@
      <Compile Include="Assets\ExternalPlugins\iTweenEditor\iTweenPath.cs" />
      <Compile Include="Assets\Scripts\Framework\Coroutines\Coroutine2.cs" />
      <Compile Include="Assets\Scripts\Framework\Coroutines\CoroutineManager.cs" />
+     <Compile Include="Assets\Scripts\Framework\Extensions\IEnumerableExtensions.cs" />
      <Compile Include="Assets\Scripts\Framework\Extensions\LinkedListExt.cs" />
      <Compile Include="Assets\Scripts\Framework\Extensions\MonoBehaviourExts.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Events\CollisionHandler.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Events\CubeEvent.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Events\EventManager.cs" />
+     <Compile Include="Assets\Scripts\Gameplay\Events\IEvent.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GameManager.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Level\Level.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Level\LevelManager.cs" />
@@ -129,6 +134,7 @@
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Particle VertexLit Blended.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Reflect-BumpVertexLit.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Alpha-Diffuse.shader" />
+     <None Include="Assets\Standard Assets\Materials\UnlitColor.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Normal-Glossy.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Illumin-Parallax.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Illumin-Diffuse-VertexIllumin.shader" />

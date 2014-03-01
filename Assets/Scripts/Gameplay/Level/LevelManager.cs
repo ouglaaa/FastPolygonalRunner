@@ -20,17 +20,23 @@ public class LevelManager : MonoBehaviour
 	public float Speed = 50f;
 
     public Transform[] Anchors;
+	public EventManager EventManager
+	{
+		get { return _eventManager;  }
+	}
 
 
+	private EventManager _eventManager;
 	private List<GameObject> _levelModules = new List<GameObject>();
 	private GameObject _level;
 
 	public  void Awake()
 	{
-		var lm = GameObject.Find("LevelManager");
+		string name = typeof(LevelManager).Name;
+		var lm = GameObject.Find(name);
 		if (lm == null)
 		{
-			lm = new GameObject("LevelManager");
+			lm = new GameObject();
 		}
 		_instance = lm.GetComponent<LevelManager>();
 
@@ -39,6 +45,8 @@ public class LevelManager : MonoBehaviour
 		{
 			_level = new GameObject("Level");
 		}
+
+		_eventManager = lm.GetComponentInChildren<EventManager>();
 	}
 
 	public void Start()
@@ -49,25 +57,7 @@ public class LevelManager : MonoBehaviour
 		}
 	}
 	
-#if DEBUG || UNITY_EDITOR
-	public void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.KeypadMinus))
-		{
-			Speed -= 10f;
-		}
-		if (Input.GetKeyDown(KeyCode.KeypadPlus))
-		{
-			Speed += 10f;
-		}
-	}
 
-	public void OnGUI()
-	{
-		GUI.Label(new Rect(10, 10, 200, 20), string.Format("LevelManager.Speed: {0}", Speed));
-		GUI.Label(new Rect(10, 30, 200, 20), string.Format("LevelManager.Count: {0}", _levelModules.Count));
-	}
-#endif
 
 	// TODO: Peut etre faire l'update des positions des modules a un seul endroit, ca eviterait les liens Level <> LevelManager
 	public void FixedUpdate()
@@ -79,6 +69,7 @@ public class LevelManager : MonoBehaviour
 			pos.z += dt;
 			go.transform.position = pos;
 		}
+		_eventManager.UpdatePositions(dt);
 	}
 
 	// TODO: OPTIME LOL BAD GETCOMPO DANS UN UPDATE BAD BAD BAD, mais bon la fuck it.
@@ -126,4 +117,24 @@ public class LevelManager : MonoBehaviour
 		}
 		
 	}
+
+#if DEBUG || UNITY_EDITOR
+	public void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.KeypadMinus))
+		{
+			Speed -= 10f;
+		}
+		if (Input.GetKeyDown(KeyCode.KeypadPlus))
+		{
+			Speed += 10f;
+		}
+	}
+
+	public void OnGUI()
+	{
+		GUI.Label(new Rect(10, 10, 200, 20), string.Format("LevelManager.Speed: {0}", Speed));
+		GUI.Label(new Rect(10, 30, 200, 20), string.Format("LevelManager.Count: {0}", _levelModules.Count));
+	}
+#endif
 }

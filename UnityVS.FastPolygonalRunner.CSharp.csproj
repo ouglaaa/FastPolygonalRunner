@@ -7,14 +7,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9D143964-166A-10D0-30D6-A6DE6686E87B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -80,8 +82,13 @@
     <Compile Include="Assets\ExternalPlugins\iTweenEditor\iTweenPath.cs" />
     <Compile Include="Assets\Scripts\Framework\Coroutines\Coroutine2.cs" />
     <Compile Include="Assets\Scripts\Framework\Coroutines\CoroutineManager.cs" />
+    <Compile Include="Assets\Scripts\Framework\Extensions\IEnumerableExtensions.cs" />
     <Compile Include="Assets\Scripts\Framework\Extensions\LinkedListExt.cs" />
     <Compile Include="Assets\Scripts\Framework\Extensions\MonoBehaviourExts.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Events\CollisionHandler.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Events\CubeEvent.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Events\EventManager.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Events\IEvent.cs" />
     <Compile Include="Assets\Scripts\Gameplay\GameManager.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level\Level.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Level\LevelManager.cs" />
@@ -168,6 +175,7 @@
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Particle_Ranged.shader" />
     <None Include="Assets\ExternalPlugins\IndieGlow\Shaders\GlowMaskShader_Pulse_Ranged.shader" />
     <None Include="Assets\ExternalPlugins\iTweenEditor\README.txt" />
+    <None Include="Assets\Standard Assets\Materials\UnlitColor.shader" />
     <None Include="Assets\ExternalPlugins\Glow11\_internal\Plugins\Glow11.dll" />
     <None Include="Assets\ExternalPlugins\HOTween\Plugins\HOTween.dll" />
   </ItemGroup>

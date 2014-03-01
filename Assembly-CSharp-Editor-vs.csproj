@@ -99,6 +99,7 @@
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Particle VertexLit Blended.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Reflect-BumpVertexLit.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Alpha-Diffuse.shader" />
+     <None Include="Assets\Standard Assets\Materials\UnlitColor.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Normal-Glossy.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Unity\Illumin-Parallax.shader" />
      <None Include="Assets\ExternalPlugins\Glow11\Shaders\Illumin-Diffuse-VertexIllumin.shader" />
